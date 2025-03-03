@@ -1,0 +1,13 @@
+@use 'abstract/variables' as v;
+
+:root{
+    --light-color: #{v.$light-color};
+
+    --sand: #{v.$sand};
+    --dark-sand: #{v.$dark-sand};
+    --light-sand: #{v.$light-sand};
+
+    --light-gray: #{v.$light-gray};
+
+    background-color: var(--light-color);
+}
