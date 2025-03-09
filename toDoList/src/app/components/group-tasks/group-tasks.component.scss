@@ -1,0 +1,17 @@
+div {
+    padding: 24px;
+    margin: 16px;
+    border-radius: 12px;
+    background-color: var(--light-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: var(--font);
+  
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 8px;
+    }
+}

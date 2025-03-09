@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "id": "da91",
+      "task": "Study C#",
+      "category": "college",
+      "completed": true
+    },
+    {
+      "id": "ab12",
+      "task": "Review math notes",
+      "category": "school",
+      "completed": false
+    },
+    {
+      "id": "cd34",
+      "task": "Buy stationery supplies",
+      "category": "personal",
+      "completed": false
+    },
+    {
+      "id": "ef56",
+      "task": "Read article about artificial intelligence",
+      "category": "work",
+      "completed": true
+    },
+    {
+      "id": "gh78",
+      "task": "Do physics exercises",
+      "category": "school",
+      "completed": false
+    },
+    {
+      "id": "ij90",
+      "task": "Organize files on the computer",
+      "category": "personal",
+      "completed": true
+    },
+    {
+      "id": "kl12",
+      "task": "Prepare project presentation",
+      "category": "work",
+      "completed": false
+    },
+    {
+      "id": "mn34",
+      "task": "Study for history exam",
+      "category": "school",
+      "completed": false
+    },
+    {
+      "id": "op56",
+      "task": "Send monthly report",
+      "category": "work",
+      "completed": true
+    },
+    {
+      "id": "qr78",
+      "task": "Schedule medical appointment",
+      "category": "personal",
+      "completed": false
+    }
+  ]
+}
+

@@ -2,14 +2,15 @@
 
 :root{
     --light-color: #{v.$light-color};
-
-    --sand: #{v.$sand};
-    --dark-sand: #{v.$dark-sand};
-    --light-sand: #{v.$light-sand};
-
-    --light-gray: #{v.$light-gray};
-
-    --font: #{v.$font};  
-
-    background-color: var(--light-color);
+    --primary-color: #{v.$primary-color};
+    --secondary-color: #{v.$secondary-color};
+    --accent-color: #{v.$accent-color};
+    --text-color: #{v.$text-color};
+  
+    --school-category-color: #{v.$school-category-color};
+    --college-category-color: #{v.$college-category-color};
+    --personal-category-color: #{v.$personal-category-color};
+    --work-category-color: #{v.$work-category-color};
+  
+    --font: #{v.$font};
 }

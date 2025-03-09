@@ -1,0 +1,6 @@
+<div>
+    <h2>Tarefas</h2>
+    @for (task of tasks; track $index) {
+        <app-item-task [task]= task></app-item-task>
+    }
+</div>
