@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-group-tasks',
-  imports: [CommonModule ,ItemTaskComponent],
+  imports: [CommonModule, ItemTaskComponent],
   templateUrl: './group-tasks.component.html',
   styleUrl: './group-tasks.component.scss'
 })

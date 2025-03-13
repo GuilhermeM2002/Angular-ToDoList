@@ -1,5 +1,36 @@
-.toDoContainer{
-   background-color: var(--light-color);
-   font-family: var(--font);
-   text-align: center;
-}
+.toDoContainer {
+   background-color: var(--secondary-color);
+   padding: 1.5rem;
+   border-radius: 12px;
+   box-shadow: 0 4px 8px var(--shadow-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: var(--font-family);
+ 
+   .header-content {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     align-items: center;
+   }
+ 
+   .title-container {
+     display: flex;
+     align-items: center;
+     gap: 0.8rem;
+ 
+     i {
+       font-size: 1.8rem;
+       color: var(--primary-color);
+     }
+ 
+     h1 {
+       font-size: 2rem;
+       color: var(--text-color);
+       font-weight: 600;
+       margin: 0;
+     }
+   }
+ }
+ 
