@@ -1,6 +1,6 @@
 export interface Task{
     id?: number;
     task: string;
-    category: 'school' | 'college' | 'personal' | 'work';
+    category: string;
     completed: boolean;
 }

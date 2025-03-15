@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()" *ngIf="showAddTask" class="add-form">
+    <div>
+        <label for="text">Tarefa:</label>
+        <input  type="text" 
+                name="text" 
+                class="form-control" 
+                placeholder="Adicionar Tarefa"
+                id="text"
+                [(ngModel)]="task">
+    </div>
+
+    <div class="category-container">
+        <label for="category">Categoria:</label>
+        <select name="category" id="category" class="form-select" [(ngModel)]="category">
+            <option value="">Selecione uma categoria</option>
+            <option value="college">College</option>
+            <option value="school">School</option>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+
+        </select>
+    </div>
+
+    <input type="submit" value="Salvar Tarefa" class="submit-button">
+
+</form>

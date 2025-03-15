@@ -3,6 +3,7 @@
         <h2>Tarefas</h2>
         <span class="task-counter">{{ tasks.length }} active tasks</span>        
     </div>
+    <app-add-task (onAddTask)="addNewTask($event)"></app-add-task>
     @for (task of tasks; track $index) {
         <app-item-task [task]= task></app-item-task>
     }
