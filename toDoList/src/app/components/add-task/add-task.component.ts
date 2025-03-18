@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Task } from '../../Task';
 import { FormsModule } from '@angular/forms';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-add-task',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ButtonComponent],
   templateUrl: './add-task.component.html',
   styleUrl: './add-task.component.scss'
 })
@@ -15,7 +16,11 @@ export class AddTaskComponent {
   task: string = '';
   category: string = '';
   completed: boolean = false;
-  showAddTask: boolean = true;
+  showAddTask: boolean = false;
+
+  changeVisualization(valor: boolean){
+    this.showAddTask = valor;
+  }
 
   onSubmit(){
     if(!this.task) {

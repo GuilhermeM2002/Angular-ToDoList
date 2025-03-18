@@ -1,0 +1,29 @@
+.button {
+    color: var(--text-color);
+    margin-bottom: 32px;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    outline: none;
+  
+    &:hover {
+      background-color: var(--hover-color);
+      transform: translateY(-2px);
+    }
+  
+    &:active {
+      background-color: var(--active-color);
+      transform: scale(0.98);
+    }
+  
+    &:focus {
+      outline: 2px solid var(--hover-color);
+      outline-offset: 2px;
+    }
+}
