@@ -18,4 +18,12 @@ export class TaskServiceService {
   getTasks(): Observable<Task[]>{
     return this.client.get<Task[]>(this.apiUrl);
   }
+
+  deleteTask(task: Task): Observable<Task>{
+    return this.client.delete<Task>(`${this.apiUrl}/${task.id}`);
+  }
+
+  updateTask(task: Task): Observable<Task>{
+    return this.client.put<Task>(`${this.apiUrl}/${task.id}`, task);
+  }
 }

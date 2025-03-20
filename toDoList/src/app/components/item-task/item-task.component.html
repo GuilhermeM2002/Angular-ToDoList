@@ -1,4 +1,16 @@
 <div class="item-task" [ngClass]="task.category">
+    <div class="close-icon">
+        <span  (click)="onDelete(task)">
+            <i class="fas fa-times"></i>
+        </span>        
+    </div>
+
     <h2>{{task.task}}</h2>
     <p>{{task.category}}</p>
+    
+    <div class="toggle-icon">
+        <span  (click)="onToggle(task)">
+            <i class="fas" [ngClass]="{'fa-chevron-down': !isExpanded, 'fa-chevron-up': isExpanded}"></i>
+        </span>        
+    </div>
 </div>

@@ -27,4 +27,15 @@ export class GroupTasksComponent implements OnInit {
       this.tasks.push(task);
     });
   }
+
+  deleteTask(task: Task){
+    this.taskService.deleteTask(task).subscribe(() =>
+      (this.tasks = this.tasks.filter((t) => t.id !== task.id)));
+  }
+
+
+  toggleCompleted(task: Task){
+    task.completed = !task.completed;
+    this.taskService.updateTask(task).subscribe();
+  }
 }

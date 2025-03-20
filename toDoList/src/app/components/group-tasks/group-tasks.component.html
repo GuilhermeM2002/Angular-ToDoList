@@ -5,6 +5,8 @@
     </div>
     <app-add-task (onAddTask)="addNewTask($event)"></app-add-task>
     @for (task of tasks; track $index) {
-        <app-item-task [task]= task></app-item-task>
+        <app-item-task [task]= task
+        (onDeleteTask)="deleteTask($event)" 
+        (onToggleCompleted)="toggleCompleted($event)"></app-item-task>
     }
 </div>
