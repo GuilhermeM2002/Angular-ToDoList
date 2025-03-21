@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": "ab12",
-      "task": "Review math notes",
-      "category": "school",
-      "completed": false
-    },
-    {
       "id": "cd34",
       "task": "Buy stationery supplies",
       "category": "personal",
@@ -16,18 +10,24 @@
       "id": "ef56",
       "task": "Read article about artificial intelligence",
       "category": "work",
-      "completed": true
+      "completed": false
     },
     {
       "id": "kl12",
       "task": "Prepare project presentation",
       "category": "work",
-      "completed": true
+      "completed": false
     },
     {
       "id": "mn34",
       "task": "Study for history exam",
       "category": "school",
+      "completed": true
+    },
+    {
+      "id": "210f",
+      "task": "Tarefa teste",
+      "category": "personal",
       "completed": false
     }
   ]

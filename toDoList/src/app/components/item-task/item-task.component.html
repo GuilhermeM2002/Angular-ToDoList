@@ -9,8 +9,15 @@
     <p>{{task.category}}</p>
     
     <div class="toggle-icon">
-        <span  (click)="onToggle(task)">
-            <i class="fas" [ngClass]="{'fa-chevron-down': !isExpanded, 'fa-chevron-up': isExpanded}"></i>
-        </span>        
+        @if (!task.completed) {
+            <span  (click)="onToggle(task)">
+                <i class="fas fa-exclamation"></i>
+            </span>
+                        
+        }@else {
+            <span  (click)="onToggle(task)">
+                <i class="fas fa-check"></i>
+            </span>                     
+        }
     </div>
 </div>

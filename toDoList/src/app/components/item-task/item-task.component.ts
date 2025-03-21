@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
 import { Task } from '../../Task';
 import { CommonModule } from '@angular/common';
 
@@ -12,7 +12,6 @@ export class ItemTaskComponent {
   @Input() task!: Task;
   @Output() onDeleteTask = new EventEmitter<Task>();
   @Output() onToggleCompleted = new EventEmitter<Task>();
-  isExpanded = false;
 
   onDelete(task: Task){
     this.onDeleteTask.emit(task)
