@@ -1,7 +1,6 @@
 # 📝 To-Do List
 
-This is a **To-Do List** project developed with **Angular**. It allows you to create, delete, and categorize tasks dynamically, providing a user-friendly and stylish interface with **SCSS**.
-
+A simple and stylish To-Do List application built with Angular 19. This project allows you to create, delete, and categorize tasks dynamically. It uses JSON Server to simulate a back-end service for managing tasks.
 ---
 
 ## 🚀 **Features**
@@ -14,7 +13,8 @@ This is a **To-Do List** project developed with **Angular**. It allows you to cr
 ---
 
 ## 🖥️ **Technologies Used**
-- **Angular** 19  
+- **Angular** 19
+- **JSON Server**  
 - **TypeScript**  
 - **SCSS**  
 - **Font Awesome** (for icons)  
